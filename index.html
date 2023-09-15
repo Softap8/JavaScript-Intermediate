@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Bankly - Modern Account Management</title>
+</head>
+<body>
+    <header>
+        <h1>Bankly</h1>
+        <p>Your Modern Account Management Solution</p>
+    </header>
+    <main>
+        <section class="account-details">
+            <h2>Account Details</h2>
+            <p>Account Holder: <span id="account-holder"></span></p>
+            <p>Account Type: <span id="account-type"></span></p>
+            <p>Balance: $<span id="balance"></span></p>
+        </section>
+        <section class="transaction">
+            <h2>Transactions</h2>
+            <input type="number" id="amount" placeholder="Enter Amount">
+            <button class="action-button deposit" onclick="deposit()">Deposit</button>
+            <button class="action-button withdraw" onclick="withdraw()">Withdraw</button>
+        </section>
+    </main>
+    <section class="history">
+        <h2>Transaction History</h2>
+        <table id="transaction-history">
+            <thead>
+                <tr>
+                    <th>Account Holder</th>
+                    <th>Account Type</th>
+                    <th>Action</th>
+                    <th>Amount</th>
+                    <th>Balance</th>
+                    <th>Date & Time</th>
+                </tr>
+            </thead>
+            <tbody></tbody>
+        </table>
+    </section>
+    <footer>
+        <p>&copy; 2023 Bankly</p>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>

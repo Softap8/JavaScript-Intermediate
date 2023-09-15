@@ -1,0 +1,115 @@
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f6f6f6;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+header {
+    text-align: center;
+    color: #0077b6; /* Modern Blue Color */
+    margin-bottom: 20px;
+}
+
+h1 {
+    font-size: 2.5rem;
+}
+
+p {
+    color: #333;
+    font-size: 1.2rem;
+}
+
+main {
+    display: flex;
+    justify-content: space-around;
+    align-items: flex-start;
+    width: 100%;
+    max-width: 800px;
+    margin: 20px;
+}
+
+.account-details, .transaction {
+    padding: 20px;
+    border-radius: 8px;
+    background-color: #fff;
+    box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.1);
+    flex: 1;
+    margin: 10px;
+}
+
+.account-details h2, .transaction h2 {
+    color: #0077b6;
+    margin-bottom: 10px;
+}
+
+button.action-button {
+    padding: 10px 15px;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s ease;
+    width: 100%;
+}
+
+button.deposit {
+    background-color: #00cc66; /* Green */
+}
+
+button.withdraw {
+    background-color: #ff3300; /* Red */
+}
+
+button.withdraw:hover {
+    background-color: #e74c3c;
+}
+
+button.deposit:hover {
+    background-color: #00e676;
+}
+
+input {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    width: 100%;
+    margin-bottom: 10px;
+}
+
+.history {
+    background-color: #fff;
+    border-radius: 8px;
+    padding: 20px;
+    box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.1);
+    margin-top: 20px;
+    max-width: 800px;
+}
+
+.history h2 {
+    color: #0077b6;
+    margin-bottom: 10px;
+}
+
+ul#transaction-history {
+    list-style-type: none;
+    padding: 0;
+}
+
+footer {
+    text-align: center;
+    background-color: none;
+    color: #0c0b0b;
+    padding: 10px;
+    font-size: 0.8rem;
+}
+
+footer p {
+    margin: 0;
+}
